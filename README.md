@@ -1,4 +1,4 @@
-# internshipForm
+# Responsive Internship Form
 
 it is created using vanila CSS and HTML👀
 
