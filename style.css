@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(to right, #797676, #464444);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding:4%;
+}
+
+.main {
+    border-radius: 2rem;
+    border: 0.2rem solid black;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 90%;
+    /* max-width: 600px; */
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.topImage {
+    width: 10rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+fieldset {
+    border: 0.2rem solid #464444;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+}
+
+.eachInputField {
+    display: flex; /*we are making it flex, so that width property on the label tag inside it could be applied*/
+    margin-bottom: 3vh;
+}
+
+.eachInputField label {
+    width: 40%; 
+    text-align: right;
+    margin-right: 3vw; /* Space between label and input */
+    font-weight: bold;
+}
+
+.eachInputField input ,textarea ,select{
+    width:30%;
+    font-size: medium;
+    background-color: #9e9b9b;
+    border-width: 0.2em;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+.concent label {
+    font-weight: bold;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    gap:2%;
+}
+
+.form-actions button {
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: large;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    background-color: #9e9b9b;
+}
+
+@media screen and (max-width : 600px) {
+    .eachInputField {
+        flex-direction: column;
+    }
+    .eachInputField label {
+        width: 40%; 
+        text-align: left;
+        font-weight: bold;
+    }
+    .eachInputField input ,textarea ,select{
+        width:180px;
+        font-size:small;
+    }
+    
+}
+
+@media screen and (min-width :601px) and (max-width : 1023px) {
+    .eachInputField input ,textarea ,select{
+        width:200px;
+        font-size:small;
+    }
+}

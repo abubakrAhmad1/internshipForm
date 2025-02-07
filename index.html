@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <form>
+            <div class="top">
+                <h1>Internship Application Form</h1>
+                <img src="image.png" alt="Form Image" class="topImage">
+            </div>
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="eachInputField">
+                    <label for="FirstName">First Name : </label>
+                    <input type="text" id="FirstName" required>
+                </div>
+                <div class="eachInputField">
+                    <label for="LastName">Last Name : </label>
+                    <input type="text" id="LastName" required>
+                </div>
+                <div class="eachInputField">
+                    <label for="PhoneNumber">Phone Number : </label>
+                    <input type="tel" id="PhoneNumber" required>
+                </div>
+                <div class="eachInputField">
+                    <label for="emailAddress">Email Address : </label>
+                    <input type="email" id="emailAddress" required>
+                </div>
+                <div class="eachInputField">
+                    <label for="street">Street : </label>
+                    <input type="text" id="street">
+                </div>
+                <div class="eachInputField">
+                    <label for="city">City : </label>
+                    <input type="text" id="city">
+                </div>
+                <div class="eachInputField">
+                    <label for="state">State : </label>
+                    <input type="text" id="state">
+                </div>
+                <div class="eachInputField">
+                    <label for="ZipCode">Zip Code : </label>
+                    <input type="number" id="ZipCode">
+                </div>
+            </fieldset>
+
+
+            <!-- Educational Background -->
+            <fieldset>
+                <legend>Educational Background</legend>
+                <div class="eachInputField">
+                    <label for="AcadStatus">Current Academic Status : </label>
+                    <select id="AcadStatus">
+                        <option value="" disabled selected>Select Status</option>
+                        <option value="high school">High School</option>
+                        <option value="undergraduate">Undergraduate</option>
+                        <option value="graduate">Graduate</option>
+                        <option value="post graduate">Post Graduate</option>
+                    </select>
+                </div>
+                <div class="eachInputField">
+                    <label for="UniName">School/University Name : </label>
+                    <input type="text" id="UniName" required>
+                </div>
+                <div class="eachInputField">
+                    <label for="StudyField">Major/Field of Study : </label>
+                    <input type="text" id="StudyField">
+                </div>
+                <div class="eachInputField">
+                    <label for="GradYear">Expexted Graduation Year : </label>
+                    <input type="number" id="GradYear" min="1990" max="2100">
+                </div>
+            </fieldset>
+
+            <!-- Internship Preferance -->
+            <fieldset>
+                <legend>Internship Preferance</legend>
+
+                <div class="eachInputField">
+                    <label for="position">Desired Internship Position : </label>
+                    <input type="text" id="position" required>
+                </div>
+                <div class="eachInputField">
+                    <label for="duration">Preffered Internship Duration : </label>
+                    <select id="duration">
+                        <option value="" disabled selected>Select Status</option>
+                        <option value="ThreeMonth">3 Months</option>
+                        <option value="SixMonth">6 Months</option>
+                    </select>
+                </div>
+                <div class="eachInputField">
+                    <label for="StartDate">Available Start Date : </label>
+                    <input type="date" id="StartDate">
+                </div>
+                <div class="eachInputField">
+                    <label for="mode">Preffered Work Mode : </label>
+                    <select id="mode">
+                        <option value="" disabled selected>Select Status</option>
+                        <option value="remote">Remote</option>
+                        <option value="OnSite">On-Site</option>
+                        <option value="hybrid">Hybrid</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Work Experiance -->
+            <fieldset>
+                <legend>Work Experiance (If Any)</legend>
+
+                <div class="eachInputField">
+                    <label for="PrevPos">Previous Internship/Job Title : </label>
+                    <input type="text" id="PrevPos">
+                </div>
+                <div class="eachInputField">
+                    <label for="CompName">Company Name : </label>
+                    <input type="text" id="CompName">
+                </div>
+                <div class="eachInputField">
+                    <label for="EmpDate">Employment Date (dd/mm/yy): </label>
+                    <input type="date" id="EmpDate">
+                </div>
+                <div class="eachInputField">
+                    <label for="responsibilites">Responsibilities and Skills Learned: </label>
+                    <textarea id="responsibilites" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Additional Qualifications -->
+            <fieldset>
+                <legend>Additional Qualifications</legend>
+                <div class="eachInputField">
+                    <label for="skills">Relevant Skills: </label>
+                    <textarea id="skills" rows="4"></textarea>
+                </div>
+                <div class="eachInputField">
+                    <label for="certifcations">Certifications or Online Courses Completed: </label>
+                    <textarea id="certifcations" rows="4"></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Upload Documents -->
+            <fieldset>
+                <legend>Upload Documents</legend>
+                <div class="eachInputField">
+                    <label for="cv">Upload Resume: </label>
+                    <input type="file" id="cv">
+                </div>
+                <div class="eachInputField">
+                    <label for="coverLetter">Upload Cover Letter: </label>
+                    <input type="file" id="coverLetter">
+                </div>
+                <div class="eachInputField">
+                    <label for="portfolio">Upload Portfolio: </label>
+                    <input type="file" id="portfolio">
+                </div>
+            </fieldset>
+
+
+            <!-- References -->
+            <fieldset>
+                <legend>References (Optional)</legend>
+                <div class="eachInputField">
+                    <label for="Reference Name">Reference Name : </label>
+                    <input type="text" id="Reference Name" required>
+                </div>
+                <div class="eachInputField">
+                    <label for="RefContact">Reference Contact Information : </label>
+                    <input type="tel" id="RefContact" required>
+                </div>
+                <div class="eachInputField">
+                    <label for="RelToApplicant">Relationship to Applicant : </label>
+                    <input type="text" id="RelToApplicant" required>
+                </div>
+
+            </fieldset>
+
+            <!-- Additional Questions -->
+            <fieldset>
+                <legend>Additional Questions</legend>
+                <div class="eachInputField">
+                    <label for="q1">Why do you want to intern at this company? </label>
+                    <textarea id="q1" rows="2"></textarea>
+                </div>
+                <div class="eachInputField">
+                    <label for="q2">What are your career goals after completing the internship? </label>
+                    <textarea id="q2" rows="2"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Consent and Agreement </legend>
+                <div class="concent">
+                    <input type="checkbox" id="c1">
+                    <label for="c1">for agreeing to terms and conditions</label>
+                </div>
+                <div class="concent">
+                    <input type="checkbox" id="c2">
+                    <label for="c2">Privacy Policy acknowledgment</label>
+                </div>
+            </fieldset>
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit">Submit Application</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
